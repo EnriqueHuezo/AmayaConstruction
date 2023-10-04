@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="shortcut icon" href="./assets/img/icono.ico" type="image/x-icon">
+     <title>Strong Bulls</title>
+</head>
+
+<body>
+     <header class="encabezado-normal">
+          <p class="logo">LOGO</p>
+          <nav class="encabezado-items">
+               <a href="index.html">Home</a>
+               <a href="about-us.html">About us</a>
+               <a href="our-jobs.html">Our Jobs</a>
+               <a href="contact-us.html">Contact us</a>
+          </nav>
+          <button class="hamburguer" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+               <svg width="50" height="50" viewBox="0 0 100 100">
+                 <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                 <path class="line line2" d="M 20,50 H 80" />
+                 <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+               </svg>
+             </button>
+     </header>
+
+     <div class="mobile-menu">
+          <div class="mobile-menu-items">
+               <a href="index.html">Home</a>
+               <a href="about-us.html">About us</a>
+               <a href="our-jobs.html">Our Jobs</a>
+               <a href="contact-us.html">Contact us</a>
+          </div>
+     </div>
+
+     <main class="our-jobs">
+          <section>
+               <div class="container-normal">
+                    <div class="search-container">
+                         <h2 class="subtitulo-our-jobs">photos of our work</h2>
+                    
+                         <form action="">
+                              <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="search">
+                         </form>
+
+                         <div class="categories" id="categories">
+                              <a href="#" class="activo">All</a>
+                              <a href="#">Roofing</a>
+                              <a href="#">Siding</a>
+                              <a href="#">Gutters</a>
+                              <a href="#">Demolition</a>
+                              <a href="#">Others</a>
+                         </div>
+                    </div>
+               </div>
+          </section>
+
+          <section class="grid-container">
+               <div class="container-normal-gallery">
+                    <div class="grid" id="grid">
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/antes-techo-01.jpg" alt="">
+                              </div>
+                         </div>
+                         
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/antes-techo-02.jpg" alt="">
+                              </div>
+                         </div>
+          
+                         <div class="item" data-categoria="inspections" data-etiquetas="inspections">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/antes-escaleras-01.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/despues-techo-01.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/despues-techo-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/despues-techo-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="inspections" data-etiquetas="inspections">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/banner.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="inspections" data-etiquetas="inspections">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/banner-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="inspections" data-etiquetas="inspections">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/antes-escaleras-01.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="gutters" data-etiquetas="gutters">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/gutters-01.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="demolition" data-etiquetas="demolition">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/inspection-02.png.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="demolition" data-etiquetas="demolition">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/inspection-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/other-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-01.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/roofing-01.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/roofing-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/roofing-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="gutters" data-etiquetas="gutters">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/roofing-04.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="roofing" data-etiquetas="roof roofing">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/roofing-05.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-04.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-04.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="demolition" data-etiquetas="demolition">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/demolition-02.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="gutters" data-etiquetas="gutters">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/gutters-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="gutters" data-etiquetas="gutters">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/gutters-04.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-05.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="demolition" data-etiquetas="demolition">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/demolition-03.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="demolition" data-etiquetas="demolition">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/demolition-04.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-05.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-06.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-07.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="siding" data-etiquetas="siding">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-08.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-06.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/siding-09.jpg" alt="">
+                              </div>
+                         </div>
+
+                         <div class="item" data-categoria="others" data-etiquetas="others">
+                              <div class="item-contenido">
+                                   <img src="./assets/img/others-07.jpg" alt="">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+
+     <footer>
+          <div class="container-footer">
+               <div class="contenido">
+                    <h4>Phone</h4>
+                    <p>(443) 515-8706</p>
+               </div>
+               <div class="contenido">
+                    <h4>Email</h4>
+                    <p>medranojosee1989@gmail.com</p>
+               </div>
+          </div>
+     </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+<script src="./assets/javascript/dinamic_design.js"></script>
+<script src="./assets/javascript/mosaico.js"></script>
+
+</html>

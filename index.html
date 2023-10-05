@@ -12,7 +12,7 @@
 
 <body>
      <header class="encabezado-normal">
-          <p class="logo">LOGO</p>
+          <p class="logo">AMAYA CONSTRUCTIONS</p>
           <nav class="encabezado-items">
                <a href="index.html">Home</a>
                <a href="about-us.html">About us</a>
@@ -34,12 +34,44 @@
                <h2>Roofing & Contractor</h2>
           </section>
      
-          <div class="ola">
-               <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-                    <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z">
-                    </path>
+          <div>
+               <svg
+                 class="waves"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28"
+                 preserveAspectRatio="none"
+                 shape-rendering="auto"
+               >
+                 <defs>
+                   <path
+                     id="gentle-wave"
+                     d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                   />
+                 </defs>
+                 <g class="parallax">
+                   <use
+                     xlink:href="#gentle-wave"
+                     x="48"
+                     y="0"
+                     fill="rgba(255,255,255,0.7)"
+                   />
+                   <use
+                     xlink:href="#gentle-wave"
+                     x="48"
+                     y="3"
+                     fill="rgba(255,255,255,0.5)"
+                   />
+                   <use
+                     xlink:href="#gentle-wave"
+                     x="48"
+                     y="5"
+                     fill="rgba(255,255,255,0.3)"
+                   />
+                   <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                 </g>
                </svg>
-          </div>
+             </div>
      </div>  
 
      <div class="mobile-menu">
@@ -55,89 +87,44 @@
           <section>   
                <div class="container">
                     <h2 class="subtitulo">Our services</h2>
-                    <div class="container-services">
-                         <div class="service">
-                              <div class="image-container">
-                                   <img src="./assets/img/roofing-05.jpg" alt="imagen">
-                              </div>
-                              <div class="titulo-carta">
-                                   <h3>Roofing</h3>
-                              </div>
-                         </div>
-                         <div class="service">
-                              <div class="image-container">
-                                   <img src="./assets/img/siding-05.jpg" alt="imagen">
-                              </div>
-                              <div class="titulo-carta">
-                                   <h3>Siding</h3>
-                              </div>
-                         </div>
-                         <div class="service">
-                              <div class="image-container">
-                                   <img src="./assets/img/gutters-02.jpg" alt="imagen">
-                              </div>
-                              <div class="titulo-carta">
-                                   <h3>Gutters</h3>
-                              </div>
-                         </div>
-                         <div class="service">
-                              <div class="image-container">
-                                   <img src="./assets/img/inspection-02.png.jpg" alt="imagen">
-                              </div>
-                              <div class="titulo-carta">
-                                   <h3>Inspections</h3>
-                              </div>
-                         </div>
-                         <div class="service">
-                              <div class="image-container">
-                                   <img src="./assets/img/demolition-03.jpg" alt="imagen">
-                              </div>
-                              <div class="titulo-carta">
-                                   <h3>Demolition</h3>
-                              </div>
-                         </div>
-                    </div>
+                    <div class="card-grid">
+                         <a class="card" href="#">
+                           <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+                           <div class="card__content">
+                             <p class="card__category">Category</p>
+                             <h3 class="card__heading">Example Card Heading</h3>
+                           </div>
+                         </a>
+                         <a class="card" href="#">
+                           <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                           <div class="card__content">
+                             <p class="card__category">Category</p>
+                             <h3 class="card__heading">Example Card Heading</h3>
+                           </div>
+                         </a>
+                         <a class="card" href="#">
+                           <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                           <div class="card__content">
+                             <p class="card__category">Category</p>
+                             <h3 class="card__heading">Example Card Heading</h3>
+                           </div>
+                         </li>
+                         <a class="card" href="#">
+                           <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                           <div class="card__content">
+                             <p class="card__category">Category</p>
+                             <h3 class="card__heading">Example Card Heading</h3>
+                           </div>
+                         </a>
+                    <div>
                </div>
           </section>
 
           <section>
                <div class="container">
                     <h2 class="subtitulo">Photos of our work</h2>
+
                     
-                    <div class="container-our-job-photos-gallery">
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/siding-02.jpg" alt="imagen">
-                         </div>
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/gutters-04.jpg" alt="imagen">
-                         </div>
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/others-04.jpg" alt="imagen">
-                         </div>
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/roofing-05.jpg" alt="imagen">
-                         </div>
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/banner-02.jpg" alt="imagen">
-                         </div>
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/others-07.jpg" alt="imagen">
-                         </div>
-
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/despues-techo-02.jpg" alt="imagen">
-                         </div>
-                         
-                         <div class="container-our-job-photos">
-                              <img src="./assets/img/banner.jpg" alt="imagen">
-                         </div>
-                    </div>
 
                     <a href="./our-jobs.html">
                          <h2 class="subtitulo">
@@ -163,4 +150,6 @@
      </footer>
 </body>
 <script src="./assets/javascript/dinamic_design.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+
 </html>

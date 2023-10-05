@@ -24,7 +24,7 @@ body, html {
 
 .header-parallax {
      width: 100%;
-     height: 800px;
+     height: 700px;
      background: #f9063b75;
      /* fallback for old browsers */
      background: -webkit-linear-gradient(to right, hsla(347, 95%, 50%, 0.459), hsla(153, 29%, 6%, 0.664)), url(../img/banner-02.jpg);
@@ -145,7 +145,7 @@ body, html {
 
 .header-parallax-text {
      display: flex;
-     height: 750px;
+     height: 650px;
      width: 100%;
      align-items: center;
      justify-content: center;
@@ -183,8 +183,8 @@ body, html {
 }
 
 .container {
-     padding: 30px 0;
-     width: 90%;
+     padding: 60px 0 0 0;
+     width: 80%;
      max-width: 1000px;
      margin: auto;
      overflow: hidden;
@@ -204,35 +204,6 @@ body, html {
      background: #f2f2f2;
 }
 
-.container-our-job-photos-gallery {
-     display: flex;
-     justify-content: space-evenly;
-     flex-wrap: wrap;
-}
-
-.container-our-job-photos {
-     width: 22%;
-     margin: 1rem 0 1rem 0;
-     margin-bottom: 10px;
-     overflow: hidden;
-     position: relative;
-     cursor: pointer;
-     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-     transition: 0.5s;
-}
-
-.container-our-job-photos:hover {
-     transform: scale(1.05);
-}
-
-
-.container-our-job-photos>img {
-     width: 100%;
-     height: 200px;
-     object-fit: cover;
-     display: block;
-}
-
 a > .subtitulo {
      margin-top: 2rem;
      text-decoration: underline 0.2rem red;
@@ -248,57 +219,82 @@ a > .subtitulo:hover {
 
 /*  services */
 
-.container-services {
+.services{
+     align-items: flex-start;
+     background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
      display: flex;
-     flex-wrap: wrap;
-     justify-content: space-evenly;
-     align-items: center;
-}
-
-.service {
-     display: flex;
-     flex-direction: column;
+     min-height: 100%;
      justify-content: center;
-     align-items: center;
-     width: 28%;
-     text-align: center;
-     margin: 1rem;
-     background-color: #f2f2f2;
-     border-radius: 1rem;
-     transition: 0.5s;
-     box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
-}
-
-.service .image-container {
+     padding: 64px 24px;
+   }
+   
+   .card-grid{
+     display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     grid-column-gap: 24px;
+     grid-row-gap: 24px;
+     max-width: 1200px;
      width: 100%;
-     height: 175px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-}
-
-.service img {
+   }
+   
+   .card{
+     list-style: none;
+     position: relative;
+   }
+   
+   .card:before{
+     content: '';
+     display: block;
+     padding-bottom: 150%;
      width: 100%;
-     height: 100%;
-     border-radius: 1rem 1rem 0 0;
-}
-
-.container-services .service .titulo-carta {
-     height: 100px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-
-}
-
-.service h3 {
-     margin: 10px 0;
-     color: #121212;
-}
-
-.service:hover {
-     transform: scale(1.1);
-}
+   }
+   
+   .card__background{
+     background-size: cover;
+     background-position: center;
+     border-radius: 24px;
+     bottom: 0;
+     filter: brightness(0.75) saturate(1.2) contrast(0.85);
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+     transform-origin: center;
+     transform: scale(1) translateZ(0);
+     transition: 
+       filter 200ms linear,
+       transform 200ms linear;
+   }
+   
+   .card:hover .card__background{
+     transform: scale(1.05) translateZ(0);
+   }
+   
+   .card-grid:hover > .card:not(:hover) .card__background{
+     filter: brightness(0.5) saturate(0.5) contrast(1.2);
+   }
+   
+   .card__content{
+     left: 0;
+     padding: 24px;
+     position: absolute;
+     top: 0;
+   }
+   
+   .card__category{
+     color: rgba(255,255,255,0.6);
+     font-size: 0.9rem;
+     margin-bottom: 8px;
+     text-transform: uppercase;
+   }
+   
+   .card__heading{
+     color:  rgba(255,255,255,0.9);
+     font-size: 1.9rem;
+     text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+     line-height: 1.4;
+     word-spacing: 100vw;
+   }
 
 /* footer */
 
@@ -356,7 +352,8 @@ footer {
      padding: 0 25px;
      width: 100%;
      height: 90px;
-     background: #121212;
+     background: transparent;
+     transition: 0.5s;
      position: fixed;
      z-index: 100;
 }
@@ -917,11 +914,27 @@ footer {
 
 }
 
+@media(min-width: 540px){
+     .card-grid{
+       grid-template-columns: repeat(2, 1fr); 
+     }
+   }
+   
+   @media(min-width: 960px){
+     .card-grid{
+       grid-template-columns: repeat(4, 1fr); 
+     }
+   }
+
 /* Clases inyectadas desde js*/
 
 .mobile-menu.open {
      width: 350px; 
      right: 0; 
+}
+
+.encabezado-normal.scrolled {
+     background-color: #121212;
 }
 
 .no-scroll {
@@ -932,4 +945,61 @@ footer {
      transition: 1s;
      filter: brightness(50%);
 }
+
+/* Diseño Carrousel */
+
+
+
+/* Wave effect */
+.waves {
+     position: relative;
+     width: 100%;
+     height: 15vh;
+     top: -80px;
+     /*Fix for safari gap*/
+     min-height: 100px;
+     max-height: 150px;
+   }
    
+   .content {
+     position: relative;
+     height: 20vh;
+     text-align: center;
+     background-color: white;
+   }
+   
+   /* Animation */
+   
+   .parallax > use {
+     animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+   }
+   
+   .parallax > use:nth-child(1) {
+     animation-delay: -2s;
+     animation-duration: 7s;
+   }
+   
+   .parallax > use:nth-child(2) {
+     animation-delay: -3s;
+     animation-duration: 10s;
+   }
+   
+   .parallax > use:nth-child(3) {
+     animation-delay: -4s;
+     animation-duration: 13s;
+   }
+   
+   .parallax > use:nth-child(4) {
+     animation-delay: -5s;
+     animation-duration: 20s;
+   }
+   
+   @keyframes move-forever {
+     0% {
+       transform: translate3d(-90px, 0, 0);
+     }
+   
+     100% {
+       transform: translate3d(85px, 0, 0);
+     }
+   }

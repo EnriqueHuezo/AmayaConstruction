@@ -937,6 +937,10 @@ footer {
      background-color: #121212;
 }
 
+.encabezado-normal.index {
+     background-color: transparent;
+}
+
 .no-scroll {
      overflow: hidden;
 }

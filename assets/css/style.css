@@ -380,7 +380,7 @@ footer {
 }
 
 .container-normal {
-     padding: 120px 0 20px 0;
+     padding: 160px 0 20px 0;
      width: 90%;
      max-width: 1000px;
      margin: auto;
@@ -481,6 +481,8 @@ footer {
 }
 
 .container-about-us {
+     max-width: 1000px;
+     margin: 0 2rem 0 2rem;
      display: flex;
      align-items: center;
      justify-content: space-between;
@@ -735,6 +737,8 @@ footer {
      }
      
      .container-about-us{
+          padding: 3rem 0;
+          margin: 0;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -742,7 +746,7 @@ footer {
 
      .container-about-us .informacion{
           width: 60%;
-          padding-bottom: 3rem;
+          
      }
 
      .container-about-us .informacion h3 {
@@ -750,7 +754,7 @@ footer {
      }
 
      .container-about-us img{
-          width: 90%;
+          width: 70%;
      }
 
      /* Contact us */
@@ -909,12 +913,11 @@ footer {
      /* About us*/
 
      .container-about-us img{
-          margin-bottom: 60px;
           width: 90%;
      }
 
      .container-about-us .informacion{
-          width: 95%;
+          width: 90%;
      }
 
 }

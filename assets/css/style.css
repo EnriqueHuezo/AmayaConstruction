@@ -115,36 +115,22 @@ section {
  
 .mobile-menu-items {
      height: 100%;
-     padding-top: 8rem;
      display: flex;
-     gap: 1rem;
+     gap: 2.5rem;
      flex-direction: column;
      align-items: center;
+     justify-content: center;
 }
 
 .mobile-menu-items a {
-     width: 100%;
-     padding: 0.5rem 0;
+     width: 150px;
+     font-size: 1.3rem;
+     padding: 1rem 0;
+     border-bottom: white 1px solid;
      text-align: center;
      color: white;
      position: relative;
      text-decoration: none;
-}
-
-.mobile-menu-items a::after {
-     content: "";
-     display: block;
-     position: absolute;
-     bottom: -0.5rem;
-     left: 0;
-     width: 0;
-     height: 2px;
-     background-color: white;
-     transition: 0.5s;
-}
-
-.mobile-menu-items a:hover::after {
-     width: 100%; 
 }
 
 .header-parallax-text {
@@ -187,7 +173,7 @@ section {
 }
 
 .container {
-     padding: 60px 0 0 0;
+     padding: 100px 0 0 0;
      width: 90%;
      max-width: 1200px;
      margin: auto;
@@ -197,7 +183,7 @@ section {
      color: #121212;
      font-size: 30px;
      text-align: center;
-     margin-bottom: 20px;
+     margin-bottom: 3rem;
 }
 
 /* Galeria */
@@ -234,7 +220,7 @@ a > .subtitulo:hover {
    .card-grid{
      display: grid;
      grid-template-columns: repeat(1, 1fr);
-     grid-column-gap: 24px;
+     grid-column-gap: 15px;
      grid-row-gap: 24px;
      max-width: 1200px;
      width: 100%;
@@ -243,12 +229,13 @@ a > .subtitulo:hover {
    .card{
      list-style: none;
      position: relative;
+     
    }
    
    .card:before{
      content: '';
      display: block;
-     padding-bottom: 150%;
+     padding-bottom: 110%;
      width: 100%;
    }
    
@@ -315,9 +302,7 @@ body {
 
 footer {
      background: #121212;
-     padding: 60px 0 100px 0;
-     margin: 0 0 0 0;
-     overflow: hidden;
+     padding: 4rem 2rem;
      margin-top: auto;
 }
 
@@ -326,7 +311,6 @@ footer {
      width: 100%;
      justify-content: space-evenly;
      margin: auto;
-     padding-bottom: 20px;
 }
 
 .contenido {
@@ -356,7 +340,7 @@ footer {
      width: 100%;
      height: 90px;
      background: transparent;
-     transition: 0.5s;
+     transition:ease-in 0.5s;
      position: fixed;
      z-index: 100;
 }
@@ -950,7 +934,7 @@ footer {
 /* Clases inyectadas desde js*/
 
 .mobile-menu.open {
-     width: 350px; 
+     width: 100%; 
      right: 0; 
 }
 
@@ -984,8 +968,9 @@ footer {
 }
 
 .slider-wrapper .image-list .image-item {
-     width: 325px;
+     width: 300px;
      height: 400px;
+     border-radius: 1rem;
      object-fit: cover;
 }
 

@@ -417,17 +417,21 @@ footer {
      display: flex;
      justify-content: center;
      flex-wrap: wrap;
-     gap: 1.2rem;
+     gap: 1rem;
 }
 
 .categories a {
-     color: gray;
+     color: #121212;
      font-size: 17px;
      font-weight: bold;
+     padding: 6px 16px;
+     border-radius: 4px;
+     transition: 0.5s;
 }
 
 .categories a.activo {
-     color: #121212;
+     color: white;
+     background-color: #121212;
 }
 
 .container-normal-gallery {

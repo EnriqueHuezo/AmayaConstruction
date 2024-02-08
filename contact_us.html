@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="./assets/images/Other/Logo.ico" type="image/x-icon">
+     <link rel="stylesheet" href="./assets/styles/main.css">
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+     <title>Amaya Constructions</title>
+</head>
+
+<body>
+     <div class="header-container">
+          <header class="nav-container">
+              <nav class="nav-content">
+                  <div class="logo-content">
+                      <img src="./assets/images/Other/Logo.webp" alt="imagen" loading="lazy">
+                      <p>AmayaConstruction</p>
+                  </div>
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about_us.html">About us</a></li>
+                      <li><a href="our_works.html">Our works</a></li>
+                      <li><a href="contact_us.html">Contact us</a></li>
+                  </ul>
+                  <span class="material-symbols-outlined hamburguer">
+                      <span class="line"></span>
+                      <span class="line"></span>
+                      <span class="line"></span>
+                  </span>
+              </nav> 
+          </header>
+      </div>
+  
+      <div class="menu-mobile">
+          <span class="material-symbols-outlined hamburguer-sidebar">
+              <span class="line-1"></span>
+              <span class="line-2"></span>
+          </span>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about_us.html">About us</a></li>
+              <li><a href="our_works.html">Our works</a></li>
+              <li><a href="contact_us.html">Contact us</a></li>
+          </ul>
+      </div>
+
+     <div class="overlay"></div>
+
+     <main>
+          <section class="contact-us-sections">
+               <div class="contact-us-container">
+                    <div class="contact-information">
+                         <div>
+                              <h2>Contact Info</h2>
+                              <ul class="info">
+                                   <li>
+                                        <span>
+                                             <img src="./assets/images/Other/mail.webp" alt="imagen" loading="lazy">
+                                        </span>
+                                        <span>
+                                             Amayaconstructionllc20@gmail.com
+                                        </span>
+                                   </li>
+
+                                   <li>
+                                        <span>
+                                             <img src="./assets/images/Other/call.webp" alt="imagen" loading="lazy">
+                                        </span>
+                                        <span>
+                                             (240) 471-5957
+                                        </span>
+
+                                   </li>
+                              </ul>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="contact-form">
+                         <h2>Send a Message</h2>
+                         <form onsubmit="emailSend(); reset(); return false;" class="form-box">
+                              <div class="inputBox w50">
+                                   <input type="text" name="Name" id="name" required>
+                                   <span>First Name</span>
+                              </div>
+
+                              <div class="inputBox w50">
+                                   <input type="text" name="Last name" id="lastname" required>
+                                   <span>Last Name</span>
+                              </div>
+
+                              <div class="inputBox w50">
+                                   <input type="email" name="Email" id="email" required>
+                                   <span>Email Name</span>
+                              </div>
+
+                              <div class="inputBox w50">
+                                   <input type="number" name="Mobile number" id="number" required>
+                                   <span>Mobile Number</span>
+                              </div>
+
+                              <div class="inputBox w100">
+                                   <textarea name="Description" id="message" required></textarea>
+                                   <span>Write your message here...</span>
+                              </div>
+
+                              <div class="inputBox w100">
+                                   <input type="button" value="Send" onclick="sendEmail()">
+                              </div>
+                         </form>
+                    </div>
+               </div>
+          </section>
+     </main>
+
+     <footer>
+          <div class="footer-container">
+              <div class="contactos">
+                  <div class="number">
+                      <p>Phone number</p>
+                      <p>(240) 471-5957</p>
+                  </div>
+                  <div class="email">
+                      <p>Email</p>
+                      <p>amayaconstructionllc20@gmail.com</p>
+                  </div>
+                  <div class="footer-copyright">
+                      <p>
+                          © 2023 Amaya Constructions. All rights reserved.
+                      </p>
+                  </div>
+              </div>
+          </div>
+     </footer>
+     <script defer src="./assets/scripts/navbar.js"></script>
+     <script defer src="./assets/scripts/email.js"></script>
+     <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <script defer type="text/javascript"
+          src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+     </script>
+     <script defer type="text/javascript">
+     (function(){
+          emailjs.init("RxCy4cLYf0Udb0fiM");
+     })();
+     </script>
+</body>
+</html>
